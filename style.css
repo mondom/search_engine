@@ -1,0 +1,100 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	display: flex;
+	justify-content: center;
+
+	font-family: 'Montserrat', sans-serif;
+	background-color: rgb(208, 207, 207);
+}
+
+.header {
+	display: flex;
+    align-items: center;
+	position: relative;
+	height: 360px;
+	padding: 20px 40px;
+	flex-direction: column;
+	font-family: 'Dancing Script', cursive;
+	background-image: url('./img/plant\ hero\ img.jpg');
+	background-size: cover;
+	background-position: center;
+	z-index: 0;
+}
+h1 {
+	margin-top: 20px;
+	font-size: 50px;
+	color: #c17e18;
+	z-index: 2;
+	letter-spacing: 1px;
+}
+
+.search {
+	width: 450px;
+	height: 50px;
+	font-size: 16px;
+	margin-top: 20px;
+	padding: 0 10px;
+	border-radius: 4px;
+	background-color: rgb(255,255,255);
+	z-index: 2;
+}
+input::placeholder {
+	text-align: center;
+}
+
+.shadow {
+	position: absolute;
+    width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background-color: rgba(0, 0, 0, 0.3);
+}
+
+.wrapper {
+	margin: 30px 0;
+	min-width: 60%;
+	background-color: #c17e18;
+	box-shadow: 0 0 12px #000;
+	border-radius: 8px;
+	overflow: hidden
+}
+.animal-list {
+	padding: 25px;
+}
+
+h2 {
+	text-align: center;
+	margin-bottom: 20px;
+}
+.animal {
+	background-color: rgb(206, 206, 206);
+	display: flex;
+	margin: 10px 0;
+	padding: 10px;
+	border-radius: 8px;
+	box-shadow: 0 0 5px #000;
+}
+
+img {
+	width: 250px;
+	border-radius: 8px;
+}
+.animal-info{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	width: 100%;
+	font-size: 26px;
+	font-weight: bold;
+}
+
+i {
+	font-weight: normal;
+}
