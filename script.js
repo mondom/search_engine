@@ -2,6 +2,7 @@ const input = document.querySelector('.search')
 const animal = document.querySelectorAll('.animal')
 const happyInfo = document.querySelector('.happy-info')
 const animalBox = document.querySelector('.animal-list')
+const header = document.querySelector('h2')
 
 const searching = e => {
 	const text = e.target.value.toLowerCase()
@@ -19,9 +20,10 @@ const searching = e => {
 input.addEventListener('keyup', searching)
 
 const addHappyInfo = () => {
-	if (animalBox.offsetHeight < 150) {
+	if (animalBox.offsetHeight < 200) {
 		happyInfo.style.display = 'flex'
-	} else if (animalBox.offsetHeight > 549) {
+		header.style.display = 'none'
+	} else if (animalBox.offsetHeight > 649) {
 		happyInfo.style.display = 'none'
 	}
 }
