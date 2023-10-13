@@ -1,7 +1,6 @@
 const input = document.querySelector('.search')
 const animal = document.querySelectorAll('.animal')
 const happyInfo = document.querySelector('.happy-info')
-
 const animalBox = document.querySelector('.animal-list')
 
 const searching = e => {
