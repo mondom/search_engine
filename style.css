@@ -3,8 +3,13 @@
 	margin: 0;
 	padding: 0;
 }
-body {
+body,
+.header,
+.animal-list,
+.animal {
 	display: flex;
+}
+body {
 	justify-content: center;
 	align-items: center;
 	min-height: 100vh;
@@ -12,18 +17,31 @@ body {
 	background-color: rgb(233, 233, 233);
 }
 
+.wrapper,
+.animal,
+img,
+.happy-info,
+.info-shadow {
+	border-radius: 8px;
+}
+
 .wrapper {
 	width: 800px;
+	margin: 20px 0;
 	background-color: #c99016;
 	box-shadow: 0 0 10px #000;
-	border-radius: 8px;
 	overflow: hidden;
 }
 
-.header {
-	display: flex;
-	align-items: center;
+.header,
+.animal-list,
+.animal,
+.happy-info {
 	flex-direction: column;
+}
+
+.header {
+	align-items: center;
 	position: relative;
 	height: 360px;
 	padding: 20px 40px;
@@ -33,9 +51,14 @@ body {
 	background-position: center;
 	z-index: 0;
 }
+.shadow,
+.animal::after,
+.info-shadow,
+.happy-text {
+	position: absolute;
+}
 
 .shadow {
-	position: absolute;
 	top: 0;
 	left: 0;
 	width: 100%;
@@ -54,14 +77,12 @@ h1 {
 	padding: 10px 20px;
 	margin-top: 20px;
 	width: 80%;
-	font-size: 16px;
+	font-size: 18px;
 	border-radius: 5px;
 	background-color: rgba(255, 255, 255, 0.85);
 }
 
 .animal-list {
-	display: flex;
-	flex-direction: column;
 	align-items: center;
 	padding: 40px;
 }
@@ -71,15 +92,11 @@ h2 {
 }
 
 .animal {
-	display: flex;
-	flex-direction: column;
 	position: relative;
 	text-align: center;
-	border-radius: 8px;
 	margin-bottom: 40px;
 }
 .animal::after {
-	position: absolute;
 	content: '';
 	width: 80%;
 	height: 1px;
@@ -88,32 +105,25 @@ h2 {
 	left: 10%;
 }
 img {
-	border-radius: 8px;
 	box-shadow: 0 0 10px #000;
 }
 
 .happy-info {
 	display: none;
 	position: relative;
-
-	flex-direction: column;
 	text-align: center;
-	border-radius: 8px;
 	z-index: 0;
 }
 .info-shadow {
-	position: absolute;
 	width: 100%;
 	height: 40%;
 	left: 0;
 	bottom: 0;
-	border-radius: 8px;
 	background-color: rgba(0, 0, 0, 0.7);
 	z-index: 0;
 }
 
 .happy-text {
-	position: absolute;
 	bottom: 15px;
 	color: #fff;
 	line-height: 35px;
