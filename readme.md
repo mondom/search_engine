@@ -1,6 +1,9 @@
 # Hello!
 This is my first simple app that searches for **endangered animal species.**
 
+
+[search_engine](https://mondom.github.io/search_engine/)  ←  Link to the live view 
+
 A list of endangered animals:
 
 * Red panda _(Ailurus fulgens)_
@@ -27,6 +30,3 @@ A list of endangered animals:
 For each species, a photo has been added.
 The app was created while I was learning java script 😉
 
-Below is a link to the live view
-
-[search_engine](https://mondom.github.io/search_engine/)
